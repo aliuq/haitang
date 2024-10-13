@@ -10,12 +10,12 @@ import config from "./src/config/config.json";
 import icon from "astro-icon";
 import partytown from "@astrojs/partytown";
 
-import vercel from "@astrojs/vercel/serverless";
+// import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
-  adapter: vercel(),
+  // output: 'server',
+  // adapter: vercel(),
   site: config.site.base_url,
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
